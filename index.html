@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hola mundo</h1>
+    <p>Bienvenido al curso CSS desde Cero edicion 2020 en EDteam</p>
+
+    
+    <h2>Selectores simples </h2>
+    
+    <div>
+        <h3>Etiqueta simple o elemento</h3>
+        <p class="description">
+            Son etiquetas HTML. Sirven para normalizar el estilo en todos los navegadores. Normalizar: Sobreescribir los estilos en todos los navegadores.
+            Normalize.css es un archivo que se puede descargar, aqui ya esta la normalizacion.
+        </p>
+            <code>
+            h1 {
+                color:rgb(10, 9, 94);
+            }
+            
+            p {
+                color:rgb(46, 13, 163);
+            }
+            </code>
+    
+        <h3>De Clase</h3>
+        <p class="description">
+            Se indican con un .nombre-de-la-clase
+            No pueden comenzar con numero
+            Pueden comenzar con - o _
+            Pueden contener un  : Ej: .title:first
+            Pueden ser de una letra
+        </p> 
+        <h3>Por ID</h3>
+        <p class="description">
+            No se pueden repetir (No son reutilizables). Tienen especificidad muy alta. No es recomendable su uso.
+        </p> 
+    </div>
+    <h2>Selectores compuestos </h2>
+    
+    <div>
+        <h3>Agrupados</h3>
+        <p class="description">
+            Basicamente es agrupar elementos html. No es recomendable su uso.
+        </p>
+            <code>
+                h1, h2, h3 {
+                    color:rgb(10, 9, 94);
+                }
+            </code>
+
+        <h3>Combinados</h3>
+        <p class="description">
+            aplica en todos los h1 que tengan clase title.
+            No tiene una separacion de por medio.
+        </p> 
+        <code>
+            h1.title {
+                color:rgb(10, 9, 94);
+            }
+        </code>
+        <h3>Decendientes</h3>
+        <p class="description">
+            html es un arbol que tiene padres e hijo, como uno genialigico, body es padre de todos sus hijos (h1, p)
+            Se usa cuando se quiere definir claramente una estructura, como por ejemplo si estoy haciendo un menu, generalmente los menus tienen items y los items sub-items.
+            
+        </p> 
+        HTML
+        <code>
+            < body >
+                < h1 >< /h1 >
+                < p >< /p >
+            < /body >
+        </code>
+        CSS
+        <code>
+            body p {
+                color:blue;
+            }
+        </code>
+        <h3>Con operador</h3>
+        <p class="description">
+            operadores
+            * selector universal: (selecciona absolutamente todo), no es buena idea usarlo, es mejor normalizar.
+    
+            > hijo directo: funciona si la relacion es solo de hijo directo.
+            + hermano siguiente: se aplica solo a los siguientes hermanos de una determinada etiqueta
+            ~ hermanos siguientes: por ejemplo, todos los divs que vengan luego de un p.
+
+        </p> 
+        <code>
+            h1 ~ h2 {
+                color:white;
+            }
+        </code>
+
+        <h3>De atributo</h3>
+        <p class="description">
+            Usan []
+        </p> 
+        <code>
+            [attr="value"] {
+                color:white;
+            }
+        </code>
+        <br>
+        <input type="text" placeholder="tu nombre">
+        <input type="tel" placeholder="tu telefono" >
+        <input type="submit" value="enviar">
+    </div>
+</body>
+</html>

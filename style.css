@@ -1,0 +1,88 @@
+/*  
+
+1. Selectores simples (una palabra)
+h1 {} 
+
+Selectores
+    Etiqueta simple o elemento: Son etiquetas HTML.
+        Sirven para normalizar el estilo en todos los navegadores. Normalizar: Sobreescribir los estilos en todos los navegadores.
+        Normalize.css es un archivo que se puede descargar, aqui ya esta la normalizacion.
+        
+
+    De Clase
+        Se indican con un .nombre-de-la-clase
+
+
+2. Selectores compuestos (mas de una palabra)
+h1 span {}
+
+3. Selectores con operadores
+h1 + span {}
+
+4. Pseudo clases
+
+*/
+
+code{
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    background: whitesmoke;
+}
+
+h1, h2, h3 {
+    color:rgb(91, 89, 228);
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+    color:rgb(59, 2, 134);
+}
+
+div {
+    border: 1px solid orange;
+    margin: 10px 60px 60px 60px;
+}
+
+h3 + p {
+    border: 1px solid black;
+    background: white;
+    color: black;
+    margin: 10;
+}
+
+h1 ~ h2 {
+    margin-left:60px;
+    color:black;
+}
+
+h3{
+    margin-top: 20px;
+    margin-left:60px;
+}
+
+.description {
+    color: black;
+}
+
+[type="text"] {
+    margin: 10px;
+    border: 1px solid tomato;
+}
+
+[type="tel"] {
+    margin: 10px;
+    border: 1px solid blue;
+}
+
+[type="submit"] {
+    background: steelblue;
+    border: none;
+    color: white;
+}
